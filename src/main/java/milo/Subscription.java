@@ -35,7 +35,7 @@ public class Subscription {
             OpcUaClient client = OpcUaClient.create(cfg.build());
             client.connect().get();
 
-            NodeId nodeId = NodeId.parse("ns=3;i=1008");
+            NodeId nodeId = NodeId.parse("ns=3;i=1001");
 
             // what to read
             ReadValueId readValueId = new ReadValueId(nodeId, AttributeId.Value.uid(), null, null);

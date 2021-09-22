@@ -18,7 +18,7 @@ public class Read {
     public static void main(String[] args) {
         try
         {
-            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://127.0.0.1:4840").get();
+            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://LAPTOP-SB67LRQR:53530/OPCUA/SimulationServer").get();
 
             OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
             cfg.setEndpoint(endpoints.get(0));
@@ -26,7 +26,7 @@ public class Read {
             OpcUaClient client = OpcUaClient.create(cfg.build());
             client.connect().get();
 
-            NodeId nodeId = NodeId.parse("ns=6;s=::Program:Cube.Status.StateCurrent");
+            NodeId nodeId = NodeId.parse("ns=3;i=1008");
 
             DataValue dataValue = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
             System.out.println("DataValue= " + dataValue);
@@ -35,7 +35,7 @@ public class Read {
 
             System.out.println("Variant= " + variant);
 
-            int random = (int)variant.getValue();
+            double random = (double)variant.getValue();
             System.out.println("myVariable= " + random);
 
         }

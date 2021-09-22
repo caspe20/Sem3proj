@@ -26,7 +26,7 @@ public class Write {
             client.connect().get();
 
             NodeId nodeId = NodeId.parse("ns=3;i=1008");
-            client.writeValue(nodeId, DataValue.valueOnly(new Variant(75))).get();
+            client.writeValue(nodeId, DataValue.valueOnly(new Variant(3))).get();
 
         }
         catch(Throwable ex)
