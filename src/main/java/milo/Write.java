@@ -1,6 +1,5 @@
 package milo;
 
-import java.util.List;
 
 import org.eclipse.milo.opcua.sdk.client.OpcUaClient;
 import org.eclipse.milo.opcua.sdk.client.api.config.OpcUaClientConfigBuilder;
@@ -8,17 +7,17 @@ import org.eclipse.milo.opcua.stack.client.DiscoveryClient;
 import org.eclipse.milo.opcua.stack.core.types.builtin.DataValue;
 import org.eclipse.milo.opcua.stack.core.types.builtin.NodeId;
 import org.eclipse.milo.opcua.stack.core.types.builtin.Variant;
-import org.eclipse.milo.opcua.stack.core.types.enumerated.TimestampsToReturn;
 import org.eclipse.milo.opcua.stack.core.types.structured.EndpointDescription;
-import org.slf4j.Logger;
+
+import java.util.List;
 
 
-public class Read {
+public class Write {
 
     public static void main(String[] args) {
         try
         {
-            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://127.0.0.1:4840").get();
+            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://LAPTOP-SB67LRQR:53530/OPCUA/SimulationServer").get();
 
             OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
             cfg.setEndpoint(endpoints.get(0));
@@ -26,17 +25,8 @@ public class Read {
             OpcUaClient client = OpcUaClient.create(cfg.build());
             client.connect().get();
 
-            NodeId nodeId = NodeId.parse("ns=6;s=::Program:Cube.Status.StateCurrent");
-
-            DataValue dataValue = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
-            System.out.println("DataValue= " + dataValue);
-
-            Variant variant = dataValue.getValue();
-
-            System.out.println("Variant= " + variant);
-
-            int random = (int)variant.getValue();
-            System.out.println("myVariable= " + random);
+            NodeId nodeId = NodeId.parse("ns=3;i=1008");
+            client.writeValue(nodeId, DataValue.valueOnly(new Variant(75))).get();
 
         }
         catch(Throwable ex)
@@ -45,6 +35,5 @@ public class Read {
         }
 
     }
-
 
 }
