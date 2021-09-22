@@ -31,11 +31,17 @@ public class Browse {
 
     public static void main(String[] args) {
         try{
-            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://localhost:53530/OPCUA/SimulationServer").get();
+            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://LAPTOP-SB67LRQR:53530/OPCUA/SimulationServer").get();
 
             OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
             cfg.setEndpoint(endpoints.get(0));
-            OpcUaClientConfig config = cfg.setIdentityProvider(getIdentityProvider()).build();
+
+            //Without password:
+            OpcUaClientConfig config = cfg.build();
+
+
+            // With password:
+            //OpcUaClientConfig config = cfg.setIdentityProvider(getIdentityProvider()).build();
 
             OpcUaClient client = OpcUaClient.create(config);
             client.connect().get();
