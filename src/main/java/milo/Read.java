@@ -26,7 +26,7 @@ public class Read {
             OpcUaClient client = OpcUaClient.create(cfg.build());
             client.connect().get();
 
-            NodeId nodeId = NodeId.parse("ns=3;i=1008");
+            NodeId nodeId = NodeId.parse("ns=3;i=1001");
 
             DataValue dataValue = client.readValue(0, TimestampsToReturn.Both, nodeId).get();
             System.out.println("DataValue= " + dataValue);

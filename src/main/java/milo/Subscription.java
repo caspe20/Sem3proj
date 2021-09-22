@@ -24,6 +24,9 @@ import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned;
 
 public class Subscription {
 
+
+
+
     public static void main(String[] args) {
         try
         {
