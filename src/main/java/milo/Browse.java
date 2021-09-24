@@ -29,24 +29,32 @@ import static org.eclipse.milo.opcua.stack.core.util.ConversionUtil.toList;
 
 public class Browse {
 
+
     public static void main(String[] args) {
         try{
-            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://LAPTOP-SB67LRQR:53530/OPCUA/SimulationServer").get();
+            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://192.168.0.122:4840").get();
 
             OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
             cfg.setEndpoint(endpoints.get(0));
 
             //Without password:
-            OpcUaClientConfig config = cfg.build();
+            //OpcUaClientConfig config = cfg.build();
 
             // With password:
             //OpcUaClientConfig config = cfg.setIdentityProvider(getIdentityProvider()).build();
+            OpcUaClientConfig config = OpcUaClientConfig.builder().setEndpoint(endpoints.get(0)).setIdentityProvider(getIdentityProvider()).build();
 
             OpcUaClient client = OpcUaClient.create(config);
             client.connect().get();
 
             // start browsing at root folder
-            browseNode("", client, Identifiers.RootFolder);
+            //browseNode("", client, Identifiers.RootFolder);
+
+            // start browsing at defined note
+            NodeId startNode = NodeId.parse("ns=6;s=::Program:Cube.Admin");
+            browseNode("", client, startNode);
+
+
         }
         catch(Exception e){
             System.out.println(e.getMessage());
@@ -54,7 +62,7 @@ public class Browse {
     }
 
     public static IdentityProvider getIdentityProvider() {
-        return new UsernameProvider("athila", "password");
+        return new UsernameProvider("sdu", "1234");
     }
 
     private static void browseNode(String indent, OpcUaClient client, NodeId browseRoot) {

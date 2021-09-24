@@ -20,6 +20,7 @@ import org.eclipse.milo.opcua.stack.core.types.structured.MonitoringParameters;
 import org.eclipse.milo.opcua.stack.core.types.structured.ReadValueId;
 import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.UInteger;
 import org.eclipse.milo.opcua.stack.core.types.builtin.unsigned.Unsigned;
+import org.eclipse.milo.opcua.stack.core.util.EndpointUtil;
 
 
 public class Subscription {
@@ -30,15 +31,16 @@ public class Subscription {
     public static void main(String[] args) {
         try
         {
-            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://127.0.0.1").get();
+            List<EndpointDescription> endpoints = DiscoveryClient.getEndpoints("opc.tcp://192.168.0.122:4840").get();
+            EndpointDescription configPoint = EndpointUtil.updateUrl(endpoints.get(0),"192.168.0.122",4840);
 
             OpcUaClientConfigBuilder cfg = new OpcUaClientConfigBuilder();
-            cfg.setEndpoint(endpoints.get(0));
+            cfg.setEndpoint(configPoint);
 
             OpcUaClient client = OpcUaClient.create(cfg.build());
             client.connect().get();
 
-            NodeId nodeId = NodeId.parse("ns=3;i=1001");
+            NodeId nodeId = NodeId.parse("ns=6;s=::Program:Cube.Status.Parameter[4].Value");
 
             // what to read
             ReadValueId readValueId = new ReadValueId(nodeId, AttributeId.Value.uid(), null, null);
