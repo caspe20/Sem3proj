@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Sem3proj:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Sem3proj</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Sem3proj-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Sem3proj:war exploded" />
+    </root>
+  </artifact>
+</component>

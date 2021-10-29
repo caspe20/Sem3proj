@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="beerProject" />
         <module name="Sem3proj" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Sem3proj" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
