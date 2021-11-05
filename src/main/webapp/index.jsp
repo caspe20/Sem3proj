@@ -11,7 +11,7 @@
 <!-- LEFT side navigation, TODO Containers and spacing -->
 <!--This part should contain paths to "main page", "new brew" and "brew history". Further down a path to "maintenance"-->
 <div class="leftbar">
-    <a href="#">Main page</a>
+    <a href="#">Main pagez</a>
     <a href="#">New brew</a>
     <a href="#">Brew history</a>
 
