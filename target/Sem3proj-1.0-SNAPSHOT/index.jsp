@@ -4,33 +4,32 @@
 
 <head>
     <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    <title>front page</title>
+    <title>Binary brew</title>
 </head>
 <body>
 
 <!-- LEFT side navigation, TODO Containers and spacing -->
 <!--This part should contain paths to "main page", "new brew" and "brew history". Further down a path to "maintenance"-->
 <div class="leftbar">
-    <a href="#">Main page</a>
-    <a href="#">New brew</a>
-    <a href="#">Brew history</a>
+    <a href="#"><div class="menu-button">Main page</div></a>
+    <a href="#"><div class="menu-button">New brew</div></a>
+    <a href="#"><div class="menu-button">Brew history</div></a>
 
 
     <progress id="maintenanceProgress" value="" max="100"> 0% </progress></br>
-    <a href="#">Maintenance</a>
+    <a href="#"><div class="menu-button">Maintenance</div></a>
 </div>
 
 <!-- Page content MIDDLE -->
 <!--This part should contain current action (in this case an option to create a New brew)-->
 <div class="main">
 
-
-
-    <a href="#">
-        <button class="button" id="newBrewButton" type="button">New brew</button>
-    </a>
+    <a href="#"><div class="menu-button-main">New brew</div></a>
 
 </div>
+
+
+
 
 <!-- Page content RIGHT side bar -->
 <!--This part should contain current ingredient status and current brew status-->

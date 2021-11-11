@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index2.jsp" beforeDir="false" />
     </list>
     <list id="36906195-95bd-4100-83bf-bd7e3aa4fdff" name="Changes by eemiiil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +67,17 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -166,7 +176,7 @@
       <updated>1635512355266</updated>
       <workItem from="1635512358772" duration="5000" />
       <workItem from="1636104687676" duration="937000" />
-      <workItem from="1636622833816" duration="302000" />
+      <workItem from="1636622833816" duration="5057000" />
     </task>
     <servers />
   </component>
