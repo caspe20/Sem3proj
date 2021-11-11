@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="src/main/webapp/css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
     <title>front page</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
 <!-- LEFT side navigation, TODO Containers and spacing -->
 <!--This part should contain paths to "main page", "new brew" and "brew history". Further down a path to "maintenance"-->
 <div class="leftbar">
-    <a href="#">Main pagez</a>
+    <a href="#">Main page</a>
     <a href="#">New brew</a>
     <a href="#">Brew history</a>
 
@@ -35,7 +35,7 @@
 <!-- Page content RIGHT side bar -->
 <!--This part should contain current ingredient status and current brew status-->
 <!--Current brew: "State" (of machine), % finnished and a link to "Current brew"-->
-<br class="rightbar">
+<div class="rightbar">
     <label for="maltValue">Malt:</label>
     <progress id="maltValue" value="" max="100"> 0% </progress></br>
 
@@ -60,4 +60,3 @@
 </html>
 
 
-<button class="submit" type="submit">Submit</button>
