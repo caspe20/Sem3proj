@@ -7,6 +7,9 @@
     <title>Binary brew</title>
 </head>
 <body>
+<div class="wrapper">
+    
+
 
 <!-- LEFT side navigation, TODO Containers and spacing -->
 <!--This part should contain paths to "main page", "new brew" and "brew history". Further down a path to "maintenance"-->
@@ -54,7 +57,7 @@
     <progress id="currentBrewProgress" value="" max="100"> 0% </progress></br>
 
 </div>
-
+</div>
 </body>
 </html>
 
