@@ -7,17 +7,17 @@
     <title>Binary brew</title>
 </head>
 <body>
-
+<div class="wrapper">
 <!-- LEFT side navigation, TODO Containers and spacing -->
 <!--This part should contain paths to "main page", "new brew" and "brew history". Further down a path to "maintenance"-->
-<div class="leftbar">
-    <a href="#"><div id="mainPageButton" class="menu-button">Main page</div></a>
-    <a href="#"><div id="mainNewBrewButton" class="menu-button">New brew</div></a>
-    <a href="#"><div id="mainBrewHistoryButton" class="menu-button">Brew history</div></a>
-
-
-    <progress id="maintenanceProgress" value="" max="100"> 0% </progress></br>
-    <a href="#"><div class="menu-button">Maintenance</div></a>
+<div class="nested-main-menu">
+    <div id="mainLogo" class="box0"><a href="#"><img src="binary-logo.png" height="140" width="127"></a></div>
+    <div id="mainPageButton" class="box1"><a href="#">Main page</a></div>
+    <div id="mainNewBrewButton" class="box1"><a href="#">New brew</a></div>
+    <div id="mainBrewHistoryButton" class="box1"><a href="#">Brew history</a></div>
+    <div></div>
+    <progress class="progress-left" id="maintenanceProgress" value="" max="100"> 0% </progress>
+    <div class="box1"><a href="#">Maintenance</a></div>
 </div>
 
 <!-- Page content MIDDLE -->
@@ -28,33 +28,30 @@
 
 </div>
 
-
-
-
 <!-- Page content RIGHT side bar -->
 <!--This part should contain current ingredient status and current brew status-->
 <!--Current brew: "State" (of machine), % finnished and a link to "Current brew"-->
-<div class="rightbar">
-    <label for="maltValue">Malt:</label>
-    <progress id="maltValue" value="" max="100"> 0% </progress></br>
+<div class="nested-right-bar">
+    <div class="right-bar-label"><label for="maltValue">Malt:</label></div>
+    <div><progress class="progress-right" id="maltValue" value="" max="100"> 0% </progress></div>
 
-    <label for="barleyValue">Barley:</label>
-    <progress id="barleyValue" value="" max="100"> 0% </progress></br>
+    <div class="right-bar-label"><label for="barleyValue">Barley:</label></div>
+    <div><progress class="progress-right" id="barleyValue" value="" max="100"> 0% </progress></div>
 
-    <label for="wheatValue">Wheat:</label>
-    <progress id="wheatValue" value="" max="100"> 0% </progress></br>
+    <div class="right-bar-label"><label for="wheatValue">Wheat:</label></div>
+    <div><progress class="progress-right" id="wheatValue" value="" max="100"> 0% </progress></div>
 
-    <label for="hopsValue">Hops:</label>
-    <progress id="hopsValue" value="" max="100"> 0% </progress></br>
+    <div class="right-bar-label"><label for="hopsValue">Hops:</label></div>
+    <div><progress class="progress-right" id="hopsValue" value="" max="100"> 0% </progress></div>
 
-    <label for="yeastValue">Yeast:</label>
-    <progress id="yeastValue" value="" max="100"> 0% </progress></br></br></br>
+    <div class="right-bar-label"><label for="yeastValue">Yeast:</label></div>
+    <div><progress class="progress-right" id="yeastValue" value="" max="100"> 0% </progress></div>
 
-    <label for="currentBrewProgress">Active brew:</label>
-    <progress id="currentBrewProgress" value="" max="100"> 0% </progress></br>
+    <div class="right-bar-label"><label for="currentBrewProgress">Active brew:</label></div>
+    <div><progress class="progress-right" id="currentBrewProgress" value="" max="100"> 0% </progress></div>
 
 </div>
-
+</div>
 </body>
 </html>
 

@@ -11,8 +11,7 @@
 
 <!-- Page content MIDDLE -->
 <div class="main">
-on action
-</div>
+    <button type="button">Click Me!</button>/div>
 
 <!-- RIGHT side navigation-->
 <div class="rightbar">
