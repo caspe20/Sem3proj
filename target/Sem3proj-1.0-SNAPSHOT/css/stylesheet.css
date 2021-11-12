@@ -5,6 +5,8 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    width: 100vw;
+    height: 100vh;
 }
 
 .nested-main-menu {
@@ -15,20 +17,11 @@ body {
 }
 
 .nested-right-bar {
-    /*grid-template-columns: 1fr 2fr;*/
-    /*display: grid;*/
-    /*grid-auto-rows: 20px;*/
-    /*grid-gap: 0.5em;*/
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+    grid-auto-rows: 20px;
+    grid-gap: 0.5em;
 
-    grid-template:
-            "a b b"
-            "a b b"
-            "a b b"
-            "a b b"
-            "a b b"
-            "a b b"
-            "a b b"
-            "a b b"
 }
 
 .wrapper>div {
@@ -54,10 +47,10 @@ body {
 .right-bar-label {
     justify-items: right;
     text-align: right;
-
 }
 
 .progress-left {
+    height: 15px;
     width: 70%;
     margin: auto;
 }

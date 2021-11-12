@@ -30,7 +30,7 @@
 
 <!-- Page content RIGHT side bar -->
 <!--This part should contain current ingredient status and current brew status-->
-<!--Current brew: "State" (of machine), % finnished and a link to "Current brew"-->
+<!--Current brew: "State" (of machine), % finished and a link to "Current brew"-->
 <div class="nested-right-bar">
     <div></div>
     <div></div>
@@ -48,6 +48,7 @@
 
     <div class="right-bar-label"><label for="yeastValue">Yeast:</label></div>
     <div><progress class="progress-right" id="yeastValue" value="" max="100"> 0% </progress></div>
+
 
     <div class="right-bar-label"><label for="currentBrewProgress">Active brew:</label></div>
     <div><progress class="progress-right" id="currentBrewProgress" value="" max="100"> 0% </progress></div>
