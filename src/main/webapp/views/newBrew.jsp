@@ -4,6 +4,8 @@
     <title>new brew</title>
 </head>
 <body>
+
+<!-- Page content MIDDLE -->
 <form action="indexActive.jsp"> <!-- TODO insert link-->
 
     <label for="name">Name</label>
@@ -21,9 +23,10 @@
     <input placeholder="amount" value="" type="number" id="amount" name="amount">
 
     <label for="speed">Speed</label>
-    <input value="" type="number" id="speed" name="speed"><!-- "value skal indeholde en sti til der hvor vi regner fart ud-->
+    <input value="" type="number" id="speed" name="speed"> <!-- TODO value skal indeholde en sti til der hvor vi regner fart ud-->
+    <!-- Skal vi overhovedet have denne her? Ville det ikke være nok at have den på active brew? -->
 
-    <input class="submit" type="submit" value="start">
+    <a href="#"><input id="newBrewStart" class="submit" type="submit" value="start"></a> <!-- TODO skal starte maskinen. How to?-->
 </form>
 
 </body>

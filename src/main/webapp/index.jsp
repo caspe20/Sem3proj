@@ -11,9 +11,9 @@
 <!-- LEFT side navigation, TODO Containers and spacing -->
 <!--This part should contain paths to "main page", "new brew" and "brew history". Further down a path to "maintenance"-->
 <div class="leftbar">
-    <a href="#"><div class="menu-button">Main page</div></a>
-    <a href="#"><div class="menu-button">New brew</div></a>
-    <a href="#"><div class="menu-button">Brew history</div></a>
+    <a href="#"><div id="mainPageButton" class="menu-button">Main page</div></a>
+    <a href="#"><div id="mainNewBrewButton" class="menu-button">New brew</div></a>
+    <a href="#"><div id="mainBrewHistoryButton" class="menu-button">Brew history</div></a>
 
 
     <progress id="maintenanceProgress" value="" max="100"> 0% </progress></br>
@@ -24,7 +24,7 @@
 <!--This part should contain current action (in this case an option to create a New brew)-->
 <div class="main">
 
-    <a href="#"><div class="menu-button-main">New brew</div></a>
+    <a href="#"><div id="goToNewBrewButton" class="menu-button-main">New brew</div></a>
 
 </div>
 
