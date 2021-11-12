@@ -57,6 +57,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -73,6 +74,8 @@
   <component name="RunManager">
     <configuration name="Tomcat 9.0.53" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.53" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Sem3proj:war exploded">
           <settings>
@@ -169,7 +172,8 @@
       <updated>1635512355266</updated>
       <workItem from="1635512358772" duration="5000" />
       <workItem from="1636104687676" duration="937000" />
-      <workItem from="1636622833816" duration="5057000" />
+      <workItem from="1636622833816" duration="7976000" />
+      <workItem from="1636702846319" duration="1295000" />
     </task>
     <servers />
   </component>
