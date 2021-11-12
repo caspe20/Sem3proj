@@ -9,15 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2388e75-96e2-409f-8bbf-14702bb17028" name="Default Changelist" comment="">
+    <list default="true" id="4d243752-7525-4327-ac95-f85c6365b296" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/indexActive.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/indexActive.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/maintenance.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/maintenance.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/newBrew.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/newBrew.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index.jsp" afterDir="false" />
     </list>
+    <list id="36906195-95bd-4100-83bf-bd7e3aa4fdff" name="Changes by eemiiil" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +171,7 @@
       <workItem from="1635512358772" duration="5000" />
       <workItem from="1636104687676" duration="937000" />
       <workItem from="1636622833816" duration="7976000" />
-      <workItem from="1636702846319" duration="1295000" />
+      <workItem from="1636702846319" duration="1600000" />
     </task>
     <servers />
   </component>
