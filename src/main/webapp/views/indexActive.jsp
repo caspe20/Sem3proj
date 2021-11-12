@@ -11,7 +11,11 @@
 
 <!-- Page content MIDDLE -->
 <div class="main">
-    <button type="button">Click Me!</button>/div>
+    <button id="startButton" type="button">START</button>
+    <button id="stopButton" type="button">STOP</button>
+    <button id="restartButton" type="button">RESTART</button>
+    <button id="abortButton" type="button">ABORT</button>
+</div>
 
 <!-- RIGHT side navigation-->
 <div class="rightbar">
