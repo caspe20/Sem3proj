@@ -9,7 +9,7 @@
 <form action="indexActive.jsp"> <!-- TODO insert link-->
 
     <label for="name">Name</label>
-    <input placeholder="name" value="" type="text" id="name" name="name">
+    <input id="name" placeholder="name" value="" type="text" name="name">
 
     <label for="beerType">Beer type</label>
     <select id="beerType" name="beerType">
@@ -26,7 +26,7 @@
     <input value="" type="number" id="speed" name="speed"> <!-- TODO value skal indeholde en sti til der hvor vi regner fart ud-->
     <!-- Skal vi overhovedet have denne her? Ville det ikke være nok at have den på active brew? -->
 
-    <a href="#"><input id="newBrewStart" class="submit" type="submit" value="start"></a> <!-- TODO skal starte maskinen. How to?-->
+    <a href="#"><input id="newBrewSubmit" class="submit" type="submit" value="start" name="newBrewSubmit" ></a> <!-- TODO skal starte maskinen. How to?-->
 </form>
 
 </body>

@@ -32,6 +32,8 @@
 <!--This part should contain current ingredient status and current brew status-->
 <!--Current brew: "State" (of machine), % finnished and a link to "Current brew"-->
 <div class="nested-right-bar">
+    <div></div>
+    <div></div>
     <div class="right-bar-label"><label for="maltValue">Malt:</label></div>
     <div><progress class="progress-right" id="maltValue" value="" max="100"> 0% </progress></div>
 
