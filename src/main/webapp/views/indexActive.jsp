@@ -46,9 +46,17 @@
 <div id="remaining" class="production-value2"> -</div>
 
 <!-- current state -->
-<div>
+<div class=" "> <!-- the class is the grid box class -->
     <div class="" >CURRENT STATE</div>
     <div class="" >IDLE</div>
+</div>
+
+<!-- sensor data -->
+<div>
+    <div></div>
+    <div>
+        <div></div>
+    </div>
 </div>
 
 <!-- RIGHT side navigation-->
