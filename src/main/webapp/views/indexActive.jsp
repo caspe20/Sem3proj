@@ -17,6 +17,22 @@
     <button id="abortButton" type="button">ABORT</button>
 </div>
 
+<!-- TODO implement JS, production-value-->
+<div class="production-value-label"><label for="perMinute">per minute:</label></div>
+<div id="perMinute" class="production-value"> 0 </div>
+
+<div class="production-value-label"><label for="perMinute">per minute:</label></div>
+<div id="perMinute" class="production-value"> 0 </div>
+
+<div class="production-value-label"><label for="perMinute">per minute:</label></div>
+<div id="perMinute" class="production-value"> 0 </div>
+
+<div class="production-value-label"><label for="perMinute">per minute:</label></div>
+<div id="perMinute" class="production-value"> 0 </div>
+
+<div class="production-value-label"><label for="perMinute">per minute:</label></div>
+<div id="perMinute" class="production-value"> 0 </div>
+
 <!-- RIGHT side navigation-->
 <div class="rightbar">
 
