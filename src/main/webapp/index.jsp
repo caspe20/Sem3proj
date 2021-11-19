@@ -11,7 +11,7 @@
 <a href="hello-servlet">Hello Servlet</a>
 <br/>
 
-<a href="PLCConnection">Connect</a>
+<a href="test">Connect</a>
 
 
 <form action="PLCConnection" method="post">

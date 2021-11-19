@@ -21,7 +21,7 @@ public class PLCConnection extends HttpServlet{
     private final String port = "4840";
     private final String hostname = "127.0.0.1";
 
-    public void doPost(HttpServletRequest req, HttpServletResponse res) {
+    public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
 
         try {
 
@@ -38,6 +38,8 @@ public class PLCConnection extends HttpServlet{
             ex.printStackTrace();
 
         }
+
+        res.sendRedirect(req.getContextPath() + "/index.jsp");
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
