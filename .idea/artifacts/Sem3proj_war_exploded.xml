@@ -14,36 +14,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Sem3proj" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.eclipse.milo:sdk-client:0.6.3" />
-          <element id="library" level="project" name="Maven: org.eclipse.milo:stack-client:0.6.3" />
-          <element id="library" level="project" name="Maven: org.eclipse.milo:stack-core:0.6.3" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.61" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.61" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
-          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.3" />
-          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" />
-          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:2.3.3" />
-          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:3.0.11" />
-          <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:1.2.2" />
-          <element id="library" level="project" name="Maven: com.digitalpetri.netty:netty-channel-fsm:0.5" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.30" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.4.30" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.30" />
-          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
-          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.30" />
-          <element id="library" level="project" name="Maven: com.digitalpetri.fsm:strict-machine:0.5" />
-          <element id="library" level="project" name="Maven: io.netty:netty-codec-http:4.1.54.Final" />
-          <element id="library" level="project" name="Maven: org.eclipse.milo:sdk-core:0.6.3" />
-          <element id="library" level="project" name="Maven: biz.paluch.redis:lettuce:3.2.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-common:4.0.28.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.0.28.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.0.28.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.0.28.Final" />
-          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.0.28.Final" />
-          <element id="library" level="project" name="Maven: com.google.guava:guava:17.0" />
-          <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.2" />
-        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

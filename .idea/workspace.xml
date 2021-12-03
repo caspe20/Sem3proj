@@ -10,25 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d243752-7525-4327-ac95-f85c6365b296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/ConnectToRedis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/Servlets/SimonServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/Servlets/TestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/TestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Sem3proj_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Sem3proj_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/Persistence/ConnectToRedis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/business/Production.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/business/ReportWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/business/machine/Batch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/business/machine/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/business/machine/ProductType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/Sem3proj_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Sem3proj_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sem3proj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sem3proj.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/PLCConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Sem3proj/PLCConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/WEB-INF/classes/com/example/Sem3proj/PLCConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/WEB-INF/classes/com/example/Sem3proj/PLCConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Sem3proj-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Sem3proj/PLCConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Sem3proj/PLCConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Sem3proj/ConnectToRedis.class" beforeDir="false" />
     </list>
     <list id="f636085a-2a9f-4634-986c-694022101f05" name="Changes by casper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +60,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.Sem3proj.business" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.ConnectToRedis">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -206,6 +206,8 @@
       <workItem from="1636104538245" duration="8435000" />
       <workItem from="1636703814843" duration="5245000" />
       <workItem from="1636716915323" duration="2427000" />
+      <workItem from="1637313506573" duration="119000" />
+      <workItem from="1638528406358" duration="8316000" />
     </task>
     <servers />
   </component>
